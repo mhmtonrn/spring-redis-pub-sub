@@ -1,0 +1,24 @@
+
+spring:
+  application:
+    name: redis-second-level-cache
+  cache:
+    type: REDIS
+  datasource:
+    url:
+    jdbc-url:
+    username: monar
+    password: Monar123.
+
+redis:
+  type: standalone
+  port: 6379
+  minIdle: 5
+  maxIdle: 10
+  maxTotal: 50
+  maxWaitMillis: 20000
+  maxRedirects: 1
+  connectTimeout: 10000
+  readTimeout: 10000
+  nodes:
+    - localhost
